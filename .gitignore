@@ -1,1 +1,28 @@
+# Environment
 .env
+venv/
+env/
+.venv/
+.python-version
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project specific
+tmp/
+logs/
+*.log
