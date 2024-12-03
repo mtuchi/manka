@@ -38,7 +38,8 @@ def send_to_webhook(data, webhook_url):
 @app.route("/ask", methods=["POST"])
 def ask_manka():
     request_data = request.get_json()
-    if not request_data or "message" not in request_data:
+
+    if not request_data or "expenses" not in request_data:
         return jsonify({"error": "No message provided"}), 400
 
     user_message = request_data["expenses"]
