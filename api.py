@@ -41,7 +41,7 @@ def ask_manka():
     if not request_data or "message" not in request_data:
         return jsonify({"error": "No message provided"}), 400
 
-    user_message = request_data["message"]
+    user_message = request_data["expenses"]
 
     completion = client.chat.completions.create(
         model="llama3-8b-8192",
