@@ -1,10 +1,10 @@
-import requests
+import os
 import json
+import requests
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from groq import Groq
 from dotenv import load_dotenv
-import os
 
 load_dotenv()
 
@@ -116,5 +116,5 @@ def hello_world():
     return jsonify({"message": "Welcome to the API", "version": "1.0.0"})
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5500, debug=True)
+# if __name__ == "__main__":
+#     app.run(host="0.0.0.0", port=5500, debug=True)
